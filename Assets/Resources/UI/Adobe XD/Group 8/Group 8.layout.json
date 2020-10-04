@@ -1,0 +1,169 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Group",
+    "name": "Group 8",
+    "elements": [
+      {
+        "type": "Text",
+        "name": "STOP",
+        "text": {
+          "text": "STOP",
+          "textType": "point",
+          "font": "Montserrat-ExtraBold",
+          "style": "",
+          "size": 50,
+          "color": "#ffffff",
+          "align": "rightmiddle",
+          "opacity": 100
+        },
+        "guid": "15cd2295-8a68-42cf-a8a4-dd11c9082b97",
+        "active": true,
+        "global_draw_bounds": {
+          "x": 629,
+          "y": 1362,
+          "width": 161,
+          "height": 79,
+          "ex": 790,
+          "ey": 1441,
+          "text": {
+            "fontSize": 50
+          }
+        },
+        "rect_transform": {
+          "fix": {
+            "left": 0.22145328719723184,
+            "right": 0.22145328719723184,
+            "top": 0.2198581560283688,
+            "bottom": 0.2198581560283688,
+            "width": true,
+            "height": true
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchor_min": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchor_max": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "offset_min": {
+            "x": -80.5,
+            "y": -39.5
+          },
+          "offset_max": {
+            "x": 80.5,
+            "y": 39.5
+          }
+        },
+        "layer": "UI",
+        "parsed_names": [
+          "STOP"
+        ]
+      },
+      {
+        "type": "Image",
+        "name": "Rectangle 7",
+        "guid": "cc8bd5e2-913d-44e4-ad61-38c6013db04b",
+        "active": true,
+        "global_draw_bounds": {
+          "x": 565,
+          "y": 1331,
+          "width": 289,
+          "height": 141,
+          "ex": 854,
+          "ey": 1472
+        },
+        "rect_transform": {
+          "fix": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true,
+            "width": false,
+            "height": false
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchor_min": {
+            "x": 0,
+            "y": 0
+          },
+          "anchor_max": {
+            "x": 1,
+            "y": 1
+          },
+          "offset_min": {
+            "x": 0,
+            "y": 0
+          },
+          "offset_max": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "layer": "UI",
+        "parsed_names": [
+          "Rectangle_7"
+        ],
+        "opacity": 100,
+        "image": {
+          "source_image": "Rectangle 7+cc8bd"
+        }
+      }
+    ],
+    "guid": "cd447b20-d1b7-48a6-bc81-f4f6ef1b280e",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 565,
+      "y": 1331,
+      "width": 289,
+      "height": 141,
+      "ex": 854,
+      "ey": 1472
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.6569444444444444,
+        "y": 0.2700520833333333
+      },
+      "anchor_max": {
+        "x": 0.6569444444444444,
+        "y": 0.2700520833333333
+      },
+      "offset_min": {
+        "x": -144.5,
+        "y": -70.5
+      },
+      "offset_max": {
+        "x": 144.5,
+        "y": 70.5
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Group_8"
+    ]
+  }
+}

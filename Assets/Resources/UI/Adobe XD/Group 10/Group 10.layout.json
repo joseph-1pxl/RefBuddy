@@ -1,0 +1,160 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Group",
+    "name": "Group 10",
+    "elements": [
+      {
+        "type": "Image",
+        "name": "r",
+        "guid": "8958868f-3ffb-49d8-bf72-e801addfb617",
+        "active": true,
+        "global_draw_bounds": {
+          "x": 87,
+          "y": 1750.5,
+          "width": 68.37496948242188,
+          "height": 85.1666259765625,
+          "ex": 155.37496948242188,
+          "ey": 1835.6666259765625
+        },
+        "rect_transform": {
+          "fix": {
+            "left": 0.3023255813953488,
+            "right": 0.3001455262649891,
+            "top": 0.24127906976744187,
+            "bottom": 0.26356612804324125,
+            "width": true,
+            "height": true
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchor_min": {
+            "x": 0.50109002756518,
+            "y": 0.5111435291378997
+          },
+          "anchor_max": {
+            "x": 0.50109002756518,
+            "y": 0.5111435291378997
+          },
+          "offset_min": {
+            "x": -34.18748474121094,
+            "y": -42.58331298828125
+          },
+          "offset_max": {
+            "x": 34.18748474121094,
+            "y": 42.58331298828125
+          }
+        },
+        "layer": "UI",
+        "parsed_names": [
+          "r"
+        ],
+        "opacity": 100,
+        "image": {
+          "source_image": "r+89588"
+        }
+      },
+      {
+        "type": "Image",
+        "name": "Ellipse 1",
+        "guid": "e85bfc88-c6c8-49e5-b28d-8df5994e7d55",
+        "active": true,
+        "global_draw_bounds": {
+          "x": 35,
+          "y": 1709,
+          "width": 172,
+          "height": 172,
+          "ex": 207,
+          "ey": 1881
+        },
+        "rect_transform": {
+          "fix": {
+            "left": true,
+            "right": true,
+            "top": true,
+            "bottom": true,
+            "width": false,
+            "height": false
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchor_min": {
+            "x": 0,
+            "y": 0
+          },
+          "anchor_max": {
+            "x": 1,
+            "y": 1
+          },
+          "offset_min": {
+            "x": 0,
+            "y": 0
+          },
+          "offset_max": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "layer": "UI",
+        "parsed_names": [
+          "Ellipse_1"
+        ],
+        "opacity": 100,
+        "image": {
+          "source_image": "Ellipse 1+e85bf"
+        }
+      }
+    ],
+    "guid": "fe7faaa8-93dc-45c4-bab5-38284535ae3c",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 35,
+      "y": 1709,
+      "width": 172,
+      "height": 172,
+      "ex": 207,
+      "ey": 1881
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.11203703703703705,
+        "y": 0.06510416666666669
+      },
+      "anchor_max": {
+        "x": 0.11203703703703705,
+        "y": 0.06510416666666669
+      },
+      "offset_min": {
+        "x": -86,
+        "y": -86
+      },
+      "offset_max": {
+        "x": 86,
+        "y": 86
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Group_10"
+    ]
+  }
+}

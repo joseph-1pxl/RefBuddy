@@ -1,0 +1,58 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Image",
+    "name": "Path 2",
+    "guid": "e5a742e9-15c1-48e7-9027-7d7a60d46a09",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 431,
+      "y": 756,
+      "width": 220,
+      "height": 46,
+      "ex": 651,
+      "ey": 802
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.5009259259259259,
+        "y": 0.5942708333333333
+      },
+      "anchor_max": {
+        "x": 0.5009259259259259,
+        "y": 0.5942708333333333
+      },
+      "offset_min": {
+        "x": -110,
+        "y": -23
+      },
+      "offset_max": {
+        "x": 110,
+        "y": 23
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Path_2"
+    ],
+    "opacity": 100,
+    "image": {
+      "source_image": "Path 2+e5a74"
+    }
+  }
+}

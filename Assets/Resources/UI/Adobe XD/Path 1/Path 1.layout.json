@@ -1,0 +1,58 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Image",
+    "name": "Path 1",
+    "guid": "2ac86cc0-7dea-4dd6-9558-30d2239ce141",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 430,
+      "y": 210,
+      "width": 220,
+      "height": 46,
+      "ex": 650,
+      "ey": 256
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.5,
+        "y": 0.8786458333333333
+      },
+      "anchor_max": {
+        "x": 0.5,
+        "y": 0.8786458333333333
+      },
+      "offset_min": {
+        "x": -110,
+        "y": -23
+      },
+      "offset_max": {
+        "x": 110,
+        "y": 23
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Path_1"
+    ],
+    "opacity": 100,
+    "image": {
+      "source_image": "Path 1+2ac86"
+    }
+  }
+}

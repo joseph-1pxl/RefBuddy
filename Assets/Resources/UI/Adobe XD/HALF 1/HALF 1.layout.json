@@ -1,0 +1,67 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Text",
+    "name": "HALF 1",
+    "text": {
+      "text": "HALF 1",
+      "textType": "point",
+      "font": "Montserrat-Bold",
+      "style": "",
+      "size": 20,
+      "color": "#f4f4f4",
+      "align": "rightmiddle",
+      "opacity": 100
+    },
+    "guid": "ed7996f4-97c7-4500-80bd-07c401c0df32",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 504,
+      "y": 220,
+      "width": 72,
+      "height": 24,
+      "ex": 576,
+      "ey": 244,
+      "text": {
+        "fontSize": 20
+      }
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.5,
+        "y": 0.8791666666666667
+      },
+      "anchor_max": {
+        "x": 0.5,
+        "y": 0.8791666666666667
+      },
+      "offset_min": {
+        "x": -36,
+        "y": -12
+      },
+      "offset_max": {
+        "x": 36,
+        "y": 12
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "HALF_1"
+    ]
+  }
+}

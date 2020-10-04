@@ -1,0 +1,58 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Image",
+    "name": "Line 1",
+    "guid": "392f971e-fe21-4f9a-a1e7-c36abf3e1f0b",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 0.5,
+      "y": 754.5,
+      "width": 1080,
+      "height": 2,
+      "ex": 1080.5,
+      "ey": 756.5
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.500462962962963,
+        "y": 0.6065104166666666
+      },
+      "anchor_max": {
+        "x": 0.500462962962963,
+        "y": 0.6065104166666666
+      },
+      "offset_min": {
+        "x": -540,
+        "y": -1
+      },
+      "offset_max": {
+        "x": 540,
+        "y": 1
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Line_1"
+    ],
+    "opacity": 100,
+    "image": {
+      "source_image": "Line 1+392f9"
+    }
+  }
+}

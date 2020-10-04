@@ -1,0 +1,58 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Image",
+    "name": "Rectangle 4",
+    "guid": "14c374b8-930a-4091-869b-f8c77b54dabb",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 540,
+      "y": 0,
+      "width": 540,
+      "height": 210,
+      "ex": 1080,
+      "ey": 210
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.75,
+        "y": 0.9453125
+      },
+      "anchor_max": {
+        "x": 0.75,
+        "y": 0.9453125
+      },
+      "offset_min": {
+        "x": -270,
+        "y": -105
+      },
+      "offset_max": {
+        "x": 270,
+        "y": 105
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Rectangle_4"
+    ],
+    "opacity": 100,
+    "image": {
+      "source_image": "Rectangle 4+14c37"
+    }
+  }
+}

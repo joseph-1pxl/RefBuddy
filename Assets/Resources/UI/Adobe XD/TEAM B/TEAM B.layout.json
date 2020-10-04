@@ -1,0 +1,67 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Text",
+    "name": "TEAM B",
+    "text": {
+      "text": "TEAM B",
+      "textType": "point",
+      "font": "Montserrat-Bold",
+      "style": "",
+      "size": 40,
+      "color": "#ffffff",
+      "align": "leftmiddle",
+      "opacity": 100
+    },
+    "guid": "d06ae083-da1f-432b-98e8-dde33a452e05",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 663,
+      "y": 81,
+      "width": 165,
+      "height": 49,
+      "ex": 828,
+      "ey": 130,
+      "text": {
+        "fontSize": 40
+      }
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.6902777777777778,
+        "y": 0.9450520833333333
+      },
+      "anchor_max": {
+        "x": 0.6902777777777778,
+        "y": 0.9450520833333333
+      },
+      "offset_min": {
+        "x": -82.5,
+        "y": -24.5
+      },
+      "offset_max": {
+        "x": 82.5,
+        "y": 24.5
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "TEAM_B"
+    ]
+  }
+}

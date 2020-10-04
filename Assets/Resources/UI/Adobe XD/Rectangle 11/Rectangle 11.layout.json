@@ -1,0 +1,58 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Image",
+    "name": "Rectangle 11",
+    "guid": "53c9742c-7fb7-4d1e-b4f6-1f09988e61fe",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 539,
+      "y": 756,
+      "width": 541,
+      "height": 547,
+      "ex": 1080,
+      "ey": 1303
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.749537037037037,
+        "y": 0.46380208333333334
+      },
+      "anchor_max": {
+        "x": 0.749537037037037,
+        "y": 0.46380208333333334
+      },
+      "offset_min": {
+        "x": -270.5,
+        "y": -273.5
+      },
+      "offset_max": {
+        "x": 270.5,
+        "y": 273.5
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Rectangle_11"
+    ],
+    "opacity": 100,
+    "image": {
+      "source_image": "Rectangle 11+53c97"
+    }
+  }
+}

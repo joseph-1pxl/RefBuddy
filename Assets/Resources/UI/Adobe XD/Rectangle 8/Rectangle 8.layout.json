@@ -1,0 +1,58 @@
+{
+  "info": {
+    "version": "0.9.8",
+    "dependency": []
+  },
+  "root": {
+    "type": "Image",
+    "name": "Rectangle 8",
+    "guid": "58e42501-877b-49e0-a0c9-46778d73975c",
+    "active": true,
+    "global_draw_bounds": {
+      "x": 0,
+      "y": 209,
+      "width": 541,
+      "height": 547,
+      "ex": 541,
+      "ey": 756
+    },
+    "rect_transform": {
+      "fix": {
+        "left": null,
+        "right": null,
+        "top": null,
+        "bottom": null,
+        "width": null,
+        "height": null
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchor_min": {
+        "x": 0.250462962962963,
+        "y": 0.7486979166666666
+      },
+      "anchor_max": {
+        "x": 0.250462962962963,
+        "y": 0.7486979166666666
+      },
+      "offset_min": {
+        "x": -270.5,
+        "y": -273.5
+      },
+      "offset_max": {
+        "x": 270.5,
+        "y": 273.5
+      }
+    },
+    "layer": "UI",
+    "parsed_names": [
+      "Rectangle_8"
+    ],
+    "opacity": 100,
+    "image": {
+      "source_image": "Rectangle 8+58e42"
+    }
+  }
+}
