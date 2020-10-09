@@ -1,10 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+public enum RecordCategory
+{
+    Goal = 0,
+    RedCard,
+    YellowCard,
+    Highlight
+};
+
 public class StatsRecord : MonoBehaviour
 {
-    public delegate void OnGoalRemoved(int teamId);
-    public event OnGoalRemoved GoalRemoved;
+    public delegate void OnRecordDeleted(int teamId, RecordCategory recordCategory, string recordedTimestamp);
+    public event OnRecordDeleted RecordDeleted;
 
     [SerializeField]
     private Image _category;
@@ -15,6 +23,7 @@ public class StatsRecord : MonoBehaviour
     [SerializeField]
     private Button _removeButton;
 
+    private RecordCategory m_recordCategory;
     private int _teamId;
 
     private void Start()
@@ -23,7 +32,12 @@ public class StatsRecord : MonoBehaviour
         _removeButton.onClick.AddListener(RemoveRecord);
     }
 
-    public void SetCategory(Sprite newCategory)
+    public void SetCategory(RecordCategory recordCategory)
+    {
+        m_recordCategory = recordCategory;
+    }
+
+    public void SetSprite(Sprite newCategory)
     {
         _category.sprite = newCategory;
     }
@@ -40,7 +54,7 @@ public class StatsRecord : MonoBehaviour
 
     public void RemoveRecord()
     {
-        GoalRemoved?.Invoke(_teamId);
+        RecordDeleted?.Invoke(_teamId, m_recordCategory, _timeRecorded.text);
         Destroy(gameObject);
     }
 }

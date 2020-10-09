@@ -32,6 +32,8 @@ public class TeamManager : MonoBehaviour
     
     private Dictionary<string, Sprite> _teamLogos;
 
+    public Team[] Teams { get { return _teams; } }
+
     private void Start()
     {
         _teamLogos = new Dictionary<string, Sprite>();

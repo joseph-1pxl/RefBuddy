@@ -1,15 +1,16 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class CSVExporter
 {
-    private const string reportDirectoryName = "Report";
-    private const string reportFileName = "report.csv";
-    private const string reportSeparator = ",";
+    private const string _kReportDirectoryName = "Report";
+    private const string _kReportFileExtension = ".csv";
+    private const string _kReportSeparator = ",";
 
-    private string[] reportHeaders = new string[4]
+    private string[] _reportHeaders = new string[4]
     {
         "Team 1",
         "Timestamp",
@@ -19,7 +20,8 @@ public class CSVExporter
 
     public void SetTeams(string team1Name, string team2Name)
     {
-
+        _reportHeaders[0] = team1Name;
+        _reportHeaders[2] = team2Name;
     }
 
     public void CreateReport()
@@ -29,32 +31,46 @@ public class CSVExporter
         using (StreamWriter sw = File.CreateText(GetFilePath()))
         {
             string finalString = "";
-            for (int i = 0; i < reportHeaders.Length; i++)
+            for (int i = 0; i < _reportHeaders.Length; i++)
             {
                 if(!string.IsNullOrEmpty(finalString))
                 {
-                    finalString += reportSeparator;
+                    finalString += _kReportSeparator;
                 }
-                finalString += reportHeaders[i];
+                finalString += _reportHeaders[i];
             }
             sw.WriteLine(finalString);
         }
+    }
+
+    public void ClearReport()
+    {
+        VerifyDirectory();
+        VerifyFile();
+
+        FileStream fileStream = File.Open(GetFilePath(), FileMode.Open);
+        fileStream.SetLength(0);
+        fileStream.Close();
     }
 
     public void AppendToReport(string[] strings)
     {
         VerifyDirectory();
         VerifyFile();
-        using(StreamWriter sw = File.AppendText(GetFilePath()))
+
+        List<string> actualStrings = strings.ToList();
+        actualStrings.Insert(0, "");
+
+        using (StreamWriter sw = File.AppendText(GetFilePath()))
         {
             string finalString = string.Empty;
-            for (int i = 0; i < strings.Length; i++)
+            foreach (string str in actualStrings)
             {
-                if(!string.IsNullOrEmpty(finalString))
+                if (!string.IsNullOrEmpty(finalString))
                 {
-                    finalString += reportSeparator;
+                    finalString += _kReportSeparator;
                 }
-                finalString += strings[i];
+                finalString += str;
             }
             sw.WriteLine(finalString);
         }
@@ -80,11 +96,11 @@ public class CSVExporter
 
     private string GetDirectoryPath()
     {
-        return Application.dataPath + "/" + reportDirectoryName;
+        return Application.dataPath + "/" + _kReportDirectoryName;
     }
 
     private string GetFilePath()
     {
-        return GetDirectoryPath() + "/" + reportFileName;
+        return Path.Combine(GetDirectoryPath(), string.Format("{0}_VS_{1}_{2}", _reportHeaders[0], _reportHeaders[2], DateTime.UtcNow.ToString("dd-mm-yyyy")) + _kReportFileExtension);
     }
 }
