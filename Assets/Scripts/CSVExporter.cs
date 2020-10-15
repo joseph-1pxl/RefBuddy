@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using UnityEngine;
 
 public class CSVExporter
 {
-    private const string _kReportDirectoryName = "Report";
+    private const string _kReportDirectoryName = "RefBuddy_Reports";
     private const string _kReportFileExtension = ".csv";
     private const string _kReportSeparator = ",";
 
@@ -58,13 +56,10 @@ public class CSVExporter
         VerifyDirectory();
         VerifyFile();
 
-        List<string> actualStrings = strings.ToList();
-        actualStrings.Insert(0, "");
-
         using (StreamWriter sw = File.AppendText(GetFilePath()))
         {
             string finalString = string.Empty;
-            foreach (string str in actualStrings)
+            foreach (string str in strings)
             {
                 if (!string.IsNullOrEmpty(finalString))
                 {
@@ -96,11 +91,11 @@ public class CSVExporter
 
     private string GetDirectoryPath()
     {
-        return Application.dataPath + "/" + _kReportDirectoryName;
+        return Application.persistentDataPath + "/" + _kReportDirectoryName;
     }
 
     private string GetFilePath()
     {
-        return Path.Combine(GetDirectoryPath(), string.Format("{0}_VS_{1}_{2}", _reportHeaders[0], _reportHeaders[2], DateTime.UtcNow.ToString("dd-mm-yyyy")) + _kReportFileExtension);
+        return Path.Combine(GetDirectoryPath(), string.Format("{0}_VS_{1}_{2}", _reportHeaders[0], _reportHeaders[2], DateTime.Now.ToString("dd-MM-yyyy")) + _kReportFileExtension);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,33 +12,38 @@ public class StatsManager : MonoBehaviour
     private Text _scoreText = null;    
 
     [SerializeField]
-    private StatsRecord _statsRecord;
+    private StatsRecord _statsRecord = null;
+
+    [SerializeField]
+    private RectTransform _matchInfoRect = null;
+    [SerializeField]
+    private RectTransform _buttonsRect = null;
 
     [Header("Teams Stats")]
     [SerializeField]
-    private TeamManager _teamManager;
+    private TeamManager _teamManager = null;
     [SerializeField]
-    private Transform[] _teamsStats;
+    private Transform[] _teamsStats = null;
 
     [Header("Halfs")]
     [SerializeField]
-    private Image[] _half1Buttons;
+    private Image[] _half1Buttons = null;
     [SerializeField]
-    private Image[] _half2Buttons;
+    private Image[] _half2Buttons = null;
 
     [Header("Sprites")]
     [SerializeField]
-    private Sprite _goalSprite;
+    private Sprite _goalSprite = null;
     [SerializeField]
-    private Sprite _yellowCardSprite;
+    private Sprite _yellowCardSprite = null;
     [SerializeField]
-    private Sprite _redCardSprite;
+    private Sprite _redCardSprite = null;
     [SerializeField]
-    private Sprite _highlightSprite;
+    private Sprite _highlightSprite = null;
     [SerializeField]
-    private Sprite[] _normalSprites;
+    private Sprite[] _normalSprites = null;
     [SerializeField]
-    private Sprite[] _highlightedSprites;
+    private Sprite[] _highlightedSprites = null;
 
     private CSVExporter _CSVExporter;
 
@@ -50,7 +56,7 @@ public class StatsManager : MonoBehaviour
     private void Start()
     {
         SetHalftime(0);
-        _CSVExporter = new CSVExporter();
+        _CSVExporter = new CSVExporter();        
     }
 
     public void RecordGoal(int teamId)
@@ -167,8 +173,8 @@ public class StatsManager : MonoBehaviour
 
     public void Export()
     {
-        _CSVExporter.SetTeams(_teamManager.Teams[0].TeamName, _teamManager.Teams[1].TeamName);
         _CSVExporter.ClearReport();
+        _CSVExporter.SetTeams(_teamManager.Teams[0].TeamName, _teamManager.Teams[1].TeamName);
 
         int team1RecordsCount = 0;
         foreach (var key in _team1Timestamps.Keys)

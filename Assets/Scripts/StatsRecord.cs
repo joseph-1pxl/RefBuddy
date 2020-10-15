@@ -15,13 +15,13 @@ public class StatsRecord : MonoBehaviour
     public event OnRecordDeleted RecordDeleted;
 
     [SerializeField]
-    private Image _category;
+    private Image _category = null;
 
     [SerializeField]
-    private Text _timeRecorded;
+    private Text _timeRecorded = null;
 
     [SerializeField]
-    private Button _removeButton;
+    private Button _removeButton = null;
 
     private RecordCategory m_recordCategory;
     private int _teamId;
